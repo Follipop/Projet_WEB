@@ -1,0 +1,39 @@
+/* components/Banner.css */
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-logo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.banner-logo img {
+    height: 100px;
+    width: auto;
+}
+
+.banner-categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #003d80;
+}
