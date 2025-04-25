@@ -39,6 +39,7 @@ const HomePage = ({
           onDeleteComment={onDeleteComment}
         />
       )}
+      <hr />
       <Stats />
     </div>
   );

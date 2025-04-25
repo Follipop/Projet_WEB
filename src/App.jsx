@@ -4,8 +4,10 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import PrivateMessagesPage from "./pages/PrivateMessagesPage";
-import Banner from "./components/Banner"; 
+import Header from "./components/Header"; 
 import { forumData } from "./data";
+import Footer from "./components/Footer";
+import MainContent from "./components/MainContent"
 
 const App = () => {
   const [user, setUser] = useState({ isLoggedIn: false, currentUser: null });
@@ -44,8 +46,10 @@ const App = () => {
 
   return (
     <div>
-      <Banner user={user} setCurrentPage={setCurrentPage} onShowCategories={handleShowCategories} />
+      <Header user={user} setCurrentPage={setCurrentPage} onShowCategories={handleShowCategories} />
+      <MainContent page={currentPage}/>
       {renderPage()}
+      <Footer/>
     </div>
   );
 };

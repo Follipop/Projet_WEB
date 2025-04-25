@@ -4,6 +4,7 @@ const CategoryList = ({ forumData, setSelectedCategoryId }) => {
   return (
     <div>
       <h2>Catégories</h2>
+      <hr />
       <ul>
         {forumData.categories.map((category) => (
           <li key={category.id} onClick={() => setSelectedCategoryId(category.id)}>

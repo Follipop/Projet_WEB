@@ -1,19 +1,17 @@
-// src/components/Banner.jsx
+// src/components/Header.jsx
 import React from "react";
-import "./Banner.css";
+import "./Header.css";
 
-function Banner({ user, setCurrentPage, onShowCategories }) {
+function Header({ user, setCurrentPage, onShowCategories }) {
   return (
-    <div className="banner">
-      <div className="banner-logo">
-        <img src="/assets/logo.png" alt="Logo" />
+    <div className="header">
+      <div className="head">
+        <img className="logo" src="/assets/logo.png" alt="Logo" />
+        <h1 className="nomWeb">Forum de Xinyu et Warsamé</h1>
       </div>
-      <div className="banner-categories">
+      <nav className="navbar">
         <button className="category" onClick={() => setCurrentPage("home")}>
           Home
-        </button>
-        <button className="category" onClick={() => setCurrentPage("profile")}>
-          Profile
         </button>
         <button className="category" onClick={onShowCategories}>
           Categories
@@ -30,6 +28,9 @@ function Banner({ user, setCurrentPage, onShowCategories }) {
           </>
         ) : (
           <>
+            <button className="category" onClick={() => setCurrentPage("profile")}>
+              Profile
+            </button>
             <button className="category" onClick={() => setCurrentPage("privateMessages")}>
               Private Messages
             </button>
@@ -37,9 +38,9 @@ function Banner({ user, setCurrentPage, onShowCategories }) {
         )}
 
        
-      </div>
+      </nav>
     </div>
   );
 }
 
-export default Banner;
+export default Header;

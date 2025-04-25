@@ -8,6 +8,7 @@ const TopicList = ({ categoryId, forumData, setSelectedTopicId }) => {
   return (
     <div>
       <h2>Sujets de {category.name}</h2>
+      <hr />
       <ul>
         {category.topics.map((topic) => (
           <li key={topic.id} onClick={() => setSelectedTopicId(topic.id)}>

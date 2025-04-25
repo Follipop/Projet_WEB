@@ -32,6 +32,7 @@ const CommentList = ({ topicId, forumData, currentUser, onAddComment, onDeleteCo
   return (
     <div>
       <h2>Commentaires</h2>
+      <hr />
       <ul>
         {comments.map((comment) => (
           <li key={comment.id}>

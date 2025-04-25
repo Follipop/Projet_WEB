@@ -1,6 +1,7 @@
 /* components/Banner.css */
-.banner {
-    background-color: #007bff;
+
+.header {
+    background-color: gray;
     color: white;
     padding: 20px;
     text-align: left;
@@ -9,24 +10,32 @@
     align-items: flex-start;
 }
 
-.banner-logo {
-    display: block;
-    margin-bottom: 10px;
+.head {
+    display: flex;
 }
 
-.banner-logo img {
+.nomWeb {
+    top: 40px;
+    left: 150px;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 10px;
+    top: 10px;
+    left: 10px;
     height: 100px;
     width: auto;
 }
 
-.banner-categories {
+.navbar {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .category {
-    background-color: #0056b3;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
