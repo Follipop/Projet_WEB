@@ -27,14 +27,12 @@ function Header({ user, setCurrentPage, onShowCategories }) {
             </button>
           </>
         ) : (
-          <>
-            <button className="category" onClick={() => setCurrentPage("profile")}>
-              Profile
-            </button>
-            <button className="category" onClick={() => setCurrentPage("privateMessages")}>
+          <div className="user">
+            <img className="prof" alt="Photo de profile" src="" onClick={() => setCurrentPage("profile")} />
+            <button className="mp" onClick={() => setCurrentPage("privateMessages")}>
               Private Messages
             </button>
-          </>
+          </div>
         )}
 
        
