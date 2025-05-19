@@ -1,0 +1,94 @@
+{
+    "users": [{
+            "_id": "1",
+            "username": "admin",
+            "email": "admin@example.com",
+            "password": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MQRqQzY6k/gJ3T8JwZR29dKt4g7JQ1O",
+            "profilePicture": "",
+            "joinedDate": "2023-01-01T00:00:00Z",
+            "lastLogin": "2023-06-01T12:00:00Z"
+        },
+        {
+            "_id": "2",
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MQRqQzY6k/gJ3T8JwZR29dKt4g7JQ1O",
+            "profilePicture": "https://example.com/avatar1.jpg",
+            "joinedDate": "2023-02-15T00:00:00Z",
+            "lastLogin": "2023-06-01T10:30:00Z"
+        }
+    ],
+    "categories": [{
+            "_id": "1",
+            "name": "General Discussion",
+            "description": "Talk about anything related to the forum",
+            "createdAt": "2023-01-01T00:00:00Z"
+        },
+        {
+            "_id": "2",
+            "name": "Technology",
+            "description": "Discussions about technology",
+            "createdAt": "2023-01-02T00:00:00Z"
+        }
+    ],
+    "topics": [{
+            "_id": "1",
+            "title": "Welcome to the forum",
+            "content": "This is the first topic in our forum. Feel free to introduce yourself!",
+            "categoryId": "1",
+            "authorId": "1",
+            "createdAt": "2023-01-01T00:00:00Z",
+            "views": 100,
+            "isPinned": true
+        },
+        {
+            "_id": "2",
+            "title": "Latest JavaScript frameworks",
+            "content": "What are your thoughts on the latest JavaScript frameworks?",
+            "categoryId": "2",
+            "authorId": "2",
+            "createdAt": "2023-02-15T00:00:00Z",
+            "views": 50,
+            "isPinned": false
+        }
+    ],
+    "comments": [{
+            "_id": "1",
+            "content": "Welcome everyone! I'm the admin of this forum.",
+            "topicId": "1",
+            "authorId": "1",
+            "createdAt": "2023-01-01T00:01:00Z"
+        },
+        {
+            "_id": "2",
+            "content": "Thanks for creating this forum!",
+            "topicId": "1",
+            "authorId": "2",
+            "createdAt": "2023-02-15T00:05:00Z"
+        },
+        {
+            "_id": "3",
+            "content": "I'm really enjoying React these days.",
+            "topicId": "2",
+            "authorId": "1",
+            "createdAt": "2023-02-15T00:10:00Z"
+        }
+    ],
+    "privateMessages": [{
+            "_id": "1",
+            "content": "Hi there!",
+            "senderId": "1",
+            "receiverId": "2",
+            "createdAt": "2023-02-15T12:00:00Z",
+            "isRead": true
+        },
+        {
+            "_id": "2",
+            "content": "Hello! How are you?",
+            "senderId": "2",
+            "receiverId": "1",
+            "createdAt": "2023-02-15T12:05:00Z",
+            "isRead": true
+        }
+    ]
+}

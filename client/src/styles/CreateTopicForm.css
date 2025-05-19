@@ -1,0 +1,52 @@
+/* client/src/styles/CreateTopicForm.css */
+
+.create-topic-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-topic-form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.create-topic-form .form-group {
+    margin-bottom: 15px;
+}
+
+.create-topic-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-topic-form input,
+.create-topic-form select,
+.create-topic-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.create-topic-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.create-topic-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-topic-form button:hover {
+    background-color: #45a049;
+}
