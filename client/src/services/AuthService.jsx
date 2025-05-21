@@ -1,5 +1,5 @@
 // client/src/services/AuthService.js
-const API_URL = 'http://localhost:5173/api/users';
+const API_URL = 'http://localhost:5000/api/users';
 
 const AuthService = {
   login: async (email, password) => {
@@ -44,7 +44,11 @@ const AuthService = {
   },
 
   getCurrentUser: () => {
-    return JSON.parse(localStorage.getItem('user'));
+    const userStr = localStorage.getItem('user');
+  if (!userStr || userStr === "undefined") {
+    return null;
+  }
+  return JSON.parse(userStr);
   },
 
   getAuthToken: () => {
