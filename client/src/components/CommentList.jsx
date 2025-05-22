@@ -75,7 +75,7 @@ const CommentList = ({
         </div>
       ))}
       
-      {/*{currentUser ? (
+      {currentUser ? (
         showCommentForm ? (
           <CommentForm onSubmit={handleAddComment} />
         ) : (
@@ -88,7 +88,7 @@ const CommentList = ({
         )
       ) : (
         <p>Connectez-vous pour commenter.</p>
-      )}*/}
+      )}
       
       <button 
         onClick={() => setShowCommentForm(true)}
