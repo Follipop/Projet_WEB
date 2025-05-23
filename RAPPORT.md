@@ -11,10 +11,14 @@
 
 ## Problèmes rencontrés
 
-**Problème 1** : Serveur qui ne répondait pas  
-On avait mal mis les ports, ce qui a fait que lorsqu'on essayait de Login ou Register ça nous mettait un erreur "Failed to Fetch"  
-    ***-> Problème réglé.***
+**Problème 1 : Serveur qui ne répondait pas**  
 
-**Problème 2** : Difficulté pour connecter la base des données avec le front-end
-On a eu un peu de difficulté avec les API, on a pas su au début comment récupérer les données et les donner aux composants. Quand nous avons résolu ça il se trouve que rien ne s'affichait, car le port dans l'url de l'API était mal mis depuis le début comme le serveur, on a pris du temps à remarquer le problème.  
-    ***-> Problème réglé.***
+On avait mal mis les ports, ce qui a fait que lorsqu'on essayait de Login ou Register ça nous mettait un erreur "Failed to Fetch"  
+
+***-> Problème réglé.***
+
+**Problème 2 : Difficulté pour connecter la base des données avec le front-end**  
+
+On a eu un peu de difficulté avec les API, on a pas su au début comment récupérer les données et les donner aux composants. Quand nous avons résolu ça il se trouve que rien ne s'affichait, car le port dans l'url de l'API était mal mis depuis le début comme le serveur, on a pris du temps à remarquer le problème. 
+
+***-> Problème réglé.***
