@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5173/api/messages';
+const API_URL = 'http://localhost:5000/api/messages';
 const token = localStorage.getItem('token');
 
 const MessageService = {

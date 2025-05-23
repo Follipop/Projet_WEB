@@ -1,5 +1,3 @@
-// client/src/services/ForumService.js
-//8b18c24ad8c5656a02b1cad9487f803b2d2f3949
 const API_URL = 'http://localhost:5000/api/forum';
 const token = localStorage.getItem('token');
 
