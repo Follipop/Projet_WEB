@@ -1,6 +1,6 @@
 # Rapport de Projet - Forum Web
 
-## I/Répartition du travail dans le binôme
+## I / Répartition du travail dans le binôme
 
 | Tâche                     | Xinyu CHEN                         | Warsamé Ismail                  |
 |---------------------------|------------------------------------|---------------------------------|
@@ -9,7 +9,7 @@
 
 ---
 
-## II/Problèmes rencontrés
+## II / Problèmes rencontrés
 
 **Problème 1 : Serveur qui ne répondait pas**  
 On avait mal mis les ports, ce qui a fait que lorsqu'on essayait de Login ou Register ça nous mettait un erreur "Failed to Fetch"  
@@ -23,13 +23,13 @@ On a eu un peu de difficulté avec les API, on a pas su au début comment récup
 On a fait les modification pour que le site fonctionne parfaitement chez Warsamé sur un pc windows, mais sur le mac de Xinyu malgré que les codes soient identiques, lorsqu'on essaye de Login ou Register, il affiche le message "Failed to excute ‘json’ on ‘Response’: Unexpected end of JSON input". 
 ***-> Problème non résolu.***
 
-## III/Ce qui reste à faire
+## III / Ce qui reste à faire
 
 - Implémenter une façon d'initier une conversation avec quelqu'un.
 - La fonctionnalité pour changer le thème du site.
 - Faire un statistique de nombre de vue, et en fonction de nombre de vue faire une catégorie "tendance" des topics.
 
-## IV/Choix de modélisation
+## IV / Choix de modélisation
 
 Par rapport au document de mi-parcours, nous avons fait quelques modifications : 
 
