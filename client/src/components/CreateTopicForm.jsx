@@ -10,19 +10,22 @@ const CreateTopicForm = ({ categories, currentUser, onTopicCreated }) => {
   });
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const newTopic = await ForumService.createTopic(
-        formData.title,
-        formData.content,
-        formData.categoryId
-      );
-      onTopicCreated(newTopic);
-      setFormData({ title: '', content: '', categoryId: '' });
-    } catch (error) {
-      console.error('Error creating topic:', error);
-    }
-  };
+  e.preventDefault();
+  try {
+    console.log("Submitting:", formData.title, formData.content, formData.categoryId);
+    const newTopic = await ForumService.createTopic(
+      formData.title,
+      formData.content,
+      formData.categoryId
+    );
+    onTopicCreated(newTopic);
+    setFormData({ title: '', content: '', categoryId: '' });
+  } catch (error) {
+    console.error('Error creating topic:', error);
+  }
+  console.log("Form submitted");
+};
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;

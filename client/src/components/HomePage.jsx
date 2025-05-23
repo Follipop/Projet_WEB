@@ -67,6 +67,7 @@ const HomePage = ({
   };
 
   const handleTopicCreated = (newTopic) => {
+    console.log("New topic created:", newTopic);
     setForumData(prev => ({
       ...prev,
       topics: [newTopic, ...prev.topics]

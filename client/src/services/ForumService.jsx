@@ -1,5 +1,5 @@
 // client/src/services/ForumService.js
-const API_URL = 'http://localhost:5173/api/forum';
+const API_URL = 'http://localhost:5000/api/forum';
 const token = localStorage.getItem('token');
 
 const ForumService = {
@@ -22,11 +22,12 @@ const ForumService = {
   },
 
   createTopic: async (title, content, categoryId) => {
+    console.log("API CALL → createTopic", { title, content, categoryId });
     const response = await fetch(`${API_URL}/topics`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
-        'x-auth-token': token
+        'x-auth-token': localStorage.getItem('token')
       },
       body: JSON.stringify({ title, content, categoryId })
     });
@@ -44,7 +45,7 @@ const ForumService = {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
-        'x-auth-token': token
+        'x-auth-token': localStorage.getItem('token')
       },
       body: JSON.stringify({ topicId, content })
     });
@@ -62,7 +63,7 @@ const ForumService = {
       method: 'DELETE',
       headers: { 
         'Content-Type': 'application/json',
-        'x-auth-token': token
+        'x-auth-token': localStorage.getItem('token')
       }
     });
     
