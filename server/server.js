@@ -57,7 +57,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/forumDB',
         useUnifiedTopology: true
     })
     .then(() => {
-        console.log('🔌 Connecté à MongoDB');
+        console.log('Connecté à MongoDB');
         initializeDatabase();
     })
     .catch(err => console.error('Échec de connexion à MongoDB:', err));
