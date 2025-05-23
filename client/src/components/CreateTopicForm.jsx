@@ -1,4 +1,3 @@
-// client/src/components/CreateTopicForm.jsx
 import React, { useState } from 'react';
 import ForumService from '../services/ForumService';
 import '../styles/CreateTopicForm.css';

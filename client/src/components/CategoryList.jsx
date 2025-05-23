@@ -1,6 +1,5 @@
-// client/src/components/CategoryList.js
 import React from 'react';
-//import './styles/CategoryList.css';
+import '../styles/CategoryList.css';
 
 const CategoryList = ({ categories, setSelectedCategoryId }) => {
   return (

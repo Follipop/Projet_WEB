@@ -1,10 +1,8 @@
-// client/src/components/MainContent.js
 import React from 'react';
 import HomePage from './HomePage';
 import LoginPage from './LoginPage';
 import ProfilePage from './ProfilePage';
 import PrivateMessagesPage from './PrivateMessagesPage';
-//import './styles/MainContent.css';
 
 const MainContent = ({
   currentPage,

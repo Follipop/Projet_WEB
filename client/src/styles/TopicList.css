@@ -1,0 +1,57 @@
+.topic-list {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topic-list h3 {
+    margin-top: 0;
+}
+
+.topic-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.topic-list li:hover {
+    background-color: #f8f9fa;
+}
+
+.topic-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-header h4 {
+    margin: 0;
+}
+
+.author {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.preview {
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.topic-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.pinned {
+    color: #e74c3c;
+    font-weight: bold;
+}

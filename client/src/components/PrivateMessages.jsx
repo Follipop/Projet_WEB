@@ -1,4 +1,3 @@
-// src/components/PrivateMessages.js
 import React, { useState } from 'react';
 
 const PrivateMessages = ({ currentUser }) => {

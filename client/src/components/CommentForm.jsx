@@ -1,6 +1,4 @@
-// client/src/components/CommentForm.js
 import React, { useState } from 'react';
-//import './styles/CommentForm.css';
 
 const CommentForm = ({ onSubmit }) => {
   const [content, setContent] = useState('');

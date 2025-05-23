@@ -1,6 +1,4 @@
-// client/src/components/Profile.js
 import React, { useState } from 'react';
-//import './styles/Profile.css';
 
 const Profile = ({ user, onUpdate }) => {
   const [editMode, setEditMode] = useState(false);

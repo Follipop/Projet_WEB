@@ -1,4 +1,3 @@
-// client/src/components/CommentList.jsx
 import React, { useState } from 'react';
 import CommentForm from './CommentForm';
 import '../styles/CommentList.css';

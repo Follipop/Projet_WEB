@@ -1,11 +1,10 @@
-// client/src/components/HomePage.jsx
 import React, { useState, useEffect } from 'react';
 import CategoryList from './CategoryList';
 import TopicList from './TopicList';
 import CommentList from './CommentList';
 import CreateTopicForm from './CreateTopicForm'; // Ajouté
 import ForumService from '../services/ForumService';
-//import '../styles/HomePage.css';
+import '../styles/HomePage.css';
 
 const HomePage = ({
   selectedCategoryId,

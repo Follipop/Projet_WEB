@@ -1,8 +1,7 @@
-// client/src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
-//import './styles/Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar = ({ setCurrentPage, isLoggedIn, currentUser, onLogout }) => {
   return (

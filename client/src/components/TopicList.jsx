@@ -1,6 +1,4 @@
-// client/src/components/TopicList.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 //import './styles/TopicList.css';
 
 const TopicList = ({ topics, setSelectedTopicId }) => {

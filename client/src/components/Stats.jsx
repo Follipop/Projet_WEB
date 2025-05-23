@@ -1,7 +1,6 @@
-// client/src/components/Stats.js
 import React, { useState, useEffect } from 'react';
 import ForumService from '../services/ForumService';
-//import './styles/Stats.css';
+import '../styles/Stats.css';
 
 const Stats = () => {
   const [stats, setStats] = useState({

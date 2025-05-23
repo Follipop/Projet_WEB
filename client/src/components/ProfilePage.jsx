@@ -1,8 +1,7 @@
-// client/src/components/ProfilePage.js
 import React, { useState, useEffect } from 'react';
 import Profile from './Profile';
 import UserService from '../services/UserService';
-//import './styles/ProfilePage.css';
+import '../styles/ProfilePage.css';
 
 const ProfilePage = ({ currentUser }) => {
   const [userData, setUserData] = useState(null);

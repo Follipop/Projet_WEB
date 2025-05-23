@@ -1,7 +1,6 @@
-// client/src/components/PrivateMessagesPage.js
 import React, { useState, useEffect } from 'react';
 import MessageService from '../services/MessageService';
-//import './styles/PrivateMessagesPage.css';
+import '../styles/PrivateMessagesPage.css';
 
 const PrivateMessagesPage = ({ currentUser }) => {
   const [conversations, setConversations] = useState([]);

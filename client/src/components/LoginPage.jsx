@@ -1,8 +1,7 @@
-// client/src/components/LoginPage.js
 import React, { useState } from 'react';
 import AuthForm from './AuthForm';
 import AuthService from '../services/AuthService';
-//import './styles/LoginPage.css';
+import '../styles/LoginPage.css';
 
 const LoginPage = ({ setIsLoggedIn, setCurrentUser, setCurrentPage }) => {
   const [isLogin, setIsLogin] = useState(true);
