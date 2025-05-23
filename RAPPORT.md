@@ -1,4 +1,6 @@
-# Rapport de Projet - Forum Web
+# Rapport de Projet - Forum Web 2025
+Xinyu CHEN
+Warsamé Ismail
 
 ## I / Répartition du travail dans le binôme
 
