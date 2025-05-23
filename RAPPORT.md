@@ -6,8 +6,8 @@ Warsamé Ismail
 
 | Tâche                     | Xinyu CHEN                         | Warsamé Ismail                  |
 |---------------------------|------------------------------------|---------------------------------|
-| Côté client               | Composants principaux              | Services et styles              |
-| Côté serveur et BD        | Server.js et les models de BD      | Routes et middleware            |
+| Côté client               | Composants principaux              | Les API et les styles           |
+| Côté serveur et BD        | Server.js et les models de BD      | Les Routes et middleware        |
 
 ---
 
