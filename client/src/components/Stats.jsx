@@ -22,7 +22,6 @@ const Stats = () => {
     
     fetchStats();
     
-    // Update stats every minute
     const interval = setInterval(fetchStats, 60000);
     return () => clearInterval(interval);
   }, []);

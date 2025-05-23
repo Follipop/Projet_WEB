@@ -1,4 +1,3 @@
-// server/routes/forumRoutes.js
 import express from 'express';
 import { check, validationResult } from 'express-validator';
 import auth from '../middleware/auth.js';
@@ -8,7 +7,6 @@ import Comment from '../models/Comment.js';
 
 const router = express.Router();
 
-// Get all categories
 router.get('/categories', async(req, res) => {
     try {
         const categories = await Category.find().sort({ createdAt: -1 });
@@ -19,7 +17,6 @@ router.get('/categories', async(req, res) => {
     }
 });
 
-// Get topics by category
 router.get('/topics/:categoryId', async(req, res) => {
     try {
         const topics = await Topic.find({ categoryId: req.params.categoryId })
@@ -32,10 +29,8 @@ router.get('/topics/:categoryId', async(req, res) => {
     }
 });
 
-// Get topic with comments
 router.get('/topic/:topicId', async(req, res) => {
     try {
-        // Increment view count
         await Topic.findByIdAndUpdate(req.params.topicId, { $inc: { views: 1 } });
 
         const topic = await Topic.findById(req.params.topicId)
@@ -52,7 +47,6 @@ router.get('/topic/:topicId', async(req, res) => {
     }
 });
 
-// Create a new topic
 router.post('/topics', auth, [
     check('title', 'Title is required').not().isEmpty(),
     check('content', 'Content is required').not().isEmpty(),
@@ -81,7 +75,6 @@ router.post('/topics', auth, [
     }
 });
 
-// Add a comment
 router.post('/comments', auth, [
     check('content', 'Content is required').not().isEmpty(),
     check('topicId', 'Topic is required').not().isEmpty()
@@ -102,7 +95,6 @@ router.post('/comments', auth, [
 
         const comment = await newComment.save();
 
-        // Populate author info before sending response
         const populatedComment = await Comment.findById(comment._id)
             .populate('authorId', 'username profilePicture');
 
@@ -113,7 +105,6 @@ router.post('/comments', auth, [
     }
 });
 
-// Delete a comment
 router.delete('/comments/:id', auth, async(req, res) => {
     try {
         const comment = await Comment.findById(req.params.id);
@@ -122,7 +113,6 @@ router.delete('/comments/:id', auth, async(req, res) => {
             return res.status(404).json({ msg: 'Comment not found' });
         }
 
-        // Check user is the author
         if (comment.authorId.toString() !== req.user.id) {
             return res.status(401).json({ msg: 'User not authorized' });
         }

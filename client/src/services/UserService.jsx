@@ -1,4 +1,3 @@
-// client/src/services/UserService.js
 const API_URL = 'http://localhost:5173/api/users';
 const token = localStorage.getItem('token');
 

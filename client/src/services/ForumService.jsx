@@ -1,5 +1,4 @@
-// client/src/services/ForumService.js
-const API_URL = 'http://localhost:5173/api/forum';
+const API_URL = 'http://localhost:5000/api/forum';
 const token = localStorage.getItem('token');
 
 const ForumService = {

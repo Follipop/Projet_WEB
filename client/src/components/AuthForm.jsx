@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import './styles/AuthForm.css';
 
 const AuthForm = ({ isLogin, onSubmit }) => {
   const [formData, setFormData] = useState({

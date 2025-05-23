@@ -1,4 +1,3 @@
-// client/src/services/AuthService.js
 const API_URL = 'http://localhost:5000/api/users';
 
 const AuthService = {
