@@ -1,4 +1,3 @@
-// client/src/services/MessageService.js
 const API_URL = 'http://localhost:5173/api/messages';
 const token = localStorage.getItem('token');
 

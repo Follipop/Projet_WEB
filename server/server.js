@@ -38,11 +38,9 @@ async function initializeDatabase() {
             { name: 'Voyages', description: 'Conseils et récits de voyage' }
         ];
 
-        // Vérifie si des catégories existent déjà
         const existingCategories = await Category.countDocuments();
 
         if (existingCategories === 0) {
-            // Insertion des catégories si la base est vide
             await Category.insertMany(categories);
             console.log('Catégories initialisées avec succès');
         }

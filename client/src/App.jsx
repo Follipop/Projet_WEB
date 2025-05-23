@@ -1,4 +1,3 @@
-// client/src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -15,7 +14,6 @@ function App() {
   const [selectedTopicId, setSelectedTopicId] = useState(null);
 
   useEffect(() => {
-    // Check if user is already logged in
     const user = AuthService.getCurrentUser();
     if (user) {
       setIsLoggedIn(true);

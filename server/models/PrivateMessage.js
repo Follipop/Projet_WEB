@@ -1,4 +1,3 @@
-// server/models/PrivateMessage.js
 import mongoose from 'mongoose';
 
 const PrivateMessageSchema = new mongoose.Schema({

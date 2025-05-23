@@ -6,9 +6,8 @@ const SearchBar = ({ setCurrentPage }) => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Implement search functionality here
     console.log('Searching for:', searchTerm);
-    setCurrentPage('search'); // Or handle search results
+    setCurrentPage('search');
   };
 
   return (

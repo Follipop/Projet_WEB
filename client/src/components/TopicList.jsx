@@ -1,5 +1,5 @@
 import React from 'react';
-//import './styles/TopicList.css';
+import '../styles/TopicList.css';
 
 const TopicList = ({ topics, setSelectedTopicId }) => {
   return (
